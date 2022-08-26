@@ -121,3 +121,8 @@ export const details = {
     },
   ],
 };
+
+export const contact = {
+  // email is optional - if left empty Contact section won't show up
+  email: "hcc780921@gmail.com",
+};
