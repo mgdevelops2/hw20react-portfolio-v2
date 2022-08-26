@@ -3,29 +3,34 @@ import Style from "./Nav.module.scss";
 import Toggler from "./utils/ToggleBtn";
 import { Link, useLocation } from "react-router-dom";
 import { Box } from "@mui/material";
-import { info } from "../details/Details";
+import { details } from "../details/Details";
 
 const links = [
   {
-    name: "Home",
+    name: "home",
     to: "/",
     active: "home",
   },
   {
-    name: "About Me",
+    name: "aboutMe",
     to: "/about",
     active: "about",
   },
   {
-    name: info.initials,
+    name: details.initials,
     type: "initials",
     to: "/",
     active: "home",
   },
   {
-    name: "Portfolio",
+    name: "portfolio",
     to: "/portfolio",
     active: "portfolio",
+  },
+  {
+    name: "Resume/CV",
+    to: "/resume",
+    active: "resume",
   },
 ];
 
@@ -45,7 +50,6 @@ export default function Navbar({ darkMode, handleClick }) {
         justifyContent={"center"}
         alignItems={"center"}
         gap={{ xs: "2rem", md: "8rem" }}
-        textTransform={"lowercase"}
         fontSize={"1rem"}
       >
         {links.map((link, index) => (
@@ -53,7 +57,7 @@ export default function Navbar({ darkMode, handleClick }) {
             key={index}
             component={"li"}
             className={link.active === active && !link.type && Style.active}
-            sx={{ borderImageSource: info }}
+            sx={{ borderImageSource: details }}
           >
             <Link to={link.to} onClick={() => setActive(link.active)}>
               {!link.type && (

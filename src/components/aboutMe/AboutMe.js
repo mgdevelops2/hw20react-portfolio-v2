@@ -1,32 +1,27 @@
-//import essentials
-import React from "react"; // import react
-import { Box } from "@mui/material"; // import box from @miu
-
-// import components
-import Terminal from "./Terminal"; // import terminal box template
-import { info } from "../../details/Details"; // import info section
-
-// import stylin
+import React from "react";
 import Style from "./AboutMe.module.scss";
+import Terminal from "./Terminal";
+import { Box } from "@mui/material";
+import { details } from "../../details/Details";
 
-export default function AboutMe() {
-  const firstName = info.firstName.toLowerCase();
+export default function About() {
+  const firstName = details.firstName.toLowerCase();
 
   function aboutMeText() {
     return (
       <>
         <p>
-          <span style={{ color: info.baseColor }}>
+          <span style={{ color: details.baseColor }}>
             {firstName}
-            {info.lastName.toLowerCase()} $
+            {details.lastName.toLowerCase()} $
           </span>{" "}
           cat about{firstName}{" "}
         </p>
         <p>
-          <span style={{ color: info.baseColor }}>
+          <span style={{ color: details.baseColor }}>
             about{firstName} <span className={Style.green}>(main)</span> ${" "}
           </span>
-          {info.bio}
+          {details.bio}
         </p>
       </>
     );
@@ -36,27 +31,27 @@ export default function AboutMe() {
     return (
       <>
         <p>
-          <span style={{ color: info.baseColor }}>
+          <span style={{ color: details.baseColor }}>
             {firstName}
-            {info.lastName.toLowerCase()} $
+            {details.lastName.toLowerCase()} $
           </span>{" "}
           cd skills/tools
         </p>
         <p>
-          <span style={{ color: info.baseColor }}>
+          <span style={{ color: details.baseColor }}>
             skills/tools <span className={Style.green}>(main)</span> $
           </span>{" "}
           ls
         </p>
-        <p style={{ color: info.baseColor }}> Proficient With</p>
+        <p style={{ color: details.baseColor }}> Proficient With</p>
         <ul className={Style.skills}>
-          {info.skills.proficientWith.map((proficiency, index) => (
+          {details.skills.proficientWith.map((proficiency, index) => (
             <li key={index}>{proficiency}</li>
           ))}
         </ul>
-        <p style={{ color: info.baseColor }}> Exposed To</p>
+        <p style={{ color: details.baseColor }}> Exposed To</p>
         <ul className={Style.skills}>
-          {info.skills.exposedTo.map((skill, index) => (
+          {details.skills.exposedTo.map((skill, index) => (
             <li key={index}>{skill}</li>
           ))}
         </ul>
@@ -68,20 +63,20 @@ export default function AboutMe() {
     return (
       <>
         <p>
-          <span style={{ color: info.baseColor }}>
+          <span style={{ color: details.baseColor }}>
             {firstName}
-            {info.lastName.toLowerCase()} $
+            {details.lastName.toLowerCase()} $
           </span>{" "}
           cd hobbies/interests
         </p>
         <p>
-          <span style={{ color: info.baseColor }}>
+          <span style={{ color: details.baseColor }}>
             hobbies/interests <span className={Style.green}>(main)</span> $
           </span>{" "}
           ls
         </p>
         <ul>
-          {info.hobbies.map((hobby, index) => (
+          {details.hobbies.map((hobby, index) => (
             <li key={index}>
               <Box component={"span"} mr={"1rem"}>
                 {hobby.emoji}

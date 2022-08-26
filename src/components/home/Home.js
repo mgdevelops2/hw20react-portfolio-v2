@@ -1,58 +1,40 @@
 import React from "react";
+import Style from "./Home.module.scss";
 import me from "../../images/self.png";
 import classNames from "classnames";
-import Bullet from "../utils/Bullet";
-import SocialMedia from "../utils/SocialMedia";
+import BulletPt from "../utils/BulletPt";
+import Social from "../utils/SocialMedia";
 import { Box } from "@mui/material";
-import { info } from "../../details/Details";
-
-// import stylesheets
+import { details } from "../../details/Details";
 import "./Home.css";
-import Style from "./Home.module.scss";
 
 export default function Home() {
   return (
     <Box
       component={"main"}
       display={"flex"}
-      // textAlign={"center"}
       flexDirection={{ xs: "column", md: "row" }}
       alignItems={"center"}
       justifyContent={"center"}
       minHeight={"calc(100vh - 175px)"}
     >
-      <Box
-        class="App-logo"
-        className={classNames(Style.avatar, Style.shadowed)}
-        alt={"image of developer"}
-        // style={{ background: info.gradient }}
-        component={"img"}
-        src={me}
-        width={{ xs: "35vh", md: "40vh" }}
-        height={{ xs: "35vh", md: "40vh" }}
-        borderRadius={"25%"}
-        p={"0.75rem"}
-        mb={{ xs: "1rem", sm: 0 }}
-        mr={{ xs: 0, md: "2rem" }}
-      />
+      <img class="App-logo" alt="logo" src={me}></img>
       <Box>
         <h1>
           Hey, my name is{" "}
           <span
             style={{
-              // background: info.gradient,
               WebkitBackgroundClip: "text",
-              // WebkitTextFillColor: "transparent",
             }}
           >
-            {info.firstName}
+            {details.firstName}
           </span>
           <span className={Style.hand}>🤚</span>
         </h1>
-        <h2>I'm {info.position}.</h2>
+        <h2>I'm {details.position}.</h2>
         <Box component={"ul"} p={"0.8rem"}>
-          {info.miniBio.map((bio, index) => (
-            <Bullet key={index} emoji={bio.emoji} text={bio.text} />
+          {details.miniBio.map((bio, index) => (
+            <BulletPt key={index} emoji={bio.emoji} text={bio.text} />
           ))}
         </Box>
         <Box
@@ -61,8 +43,8 @@ export default function Home() {
           justifyContent={"center"}
           fontSize={{ xs: "2rem", md: "2.5rem" }}
         >
-          {info.socials.map((social, index) => (
-            <SocialMedia
+          {details.socials.map((social, index) => (
+            <Social
               key={index}
               link={social.link}
               icon={social.icon}

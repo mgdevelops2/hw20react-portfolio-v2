@@ -1,7 +1,7 @@
 import React from "react";
 import { Box } from "@mui/material";
 
-export default function Toggler({ darkMode, handleClick }) {
+export default function ToggleBtn({ darkMode, handleClick }) {
   const transition = "all 250ms ease";
 
   return (
@@ -14,11 +14,11 @@ export default function Toggler({ darkMode, handleClick }) {
     >
       {darkMode ? (
         <span onClick={handleClick} aria-label="Full Moon" role="img">
-          🌞
+          🌕
         </span>
       ) : (
         <span onClick={handleClick} aria-label="New Moon" role="img">
-          🌚
+          🌑
         </span>
       )}
     </Box>

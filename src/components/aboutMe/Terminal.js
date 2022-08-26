@@ -1,10 +1,8 @@
-// import essentials
-import React from "react"; // import react
-import classNames from "classnames"; // import classnames from react
-import { Box } from "@mui/material"; // import box from @mui
-
-// ipmort styling
+import React from "react";
 import Style from "./Terminal.module.scss";
+import classNames from "classnames";
+import { Box } from "@mui/material";
+
 const iconClass = "fa fa-circle";
 
 function Terminal(props) {

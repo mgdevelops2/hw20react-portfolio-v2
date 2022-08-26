@@ -1,29 +1,20 @@
-// import essentials
-import React, { useState } from "react"; // always import react
-import { Route, Routes } from "react-router-dom"; // import Route, Routes from react
-import { Box, Grid } from "@mui/material"; // importing Box and Grid from mui - look more into this useful tool over Bootstrap later.
-import Style from "./Main.module.scss"; // import our stylesheet
-
-// import components to fill page
-import Nav from "./Nav"; // import Navbar
-import AboutMe from "./aboutMe/AboutMe"; // import About
-
-import Home from "./home/Home"; // import Home
-// import Portfolio from "./portfolio/Portfolio"; // import Portfolio
+import React, { useState } from "react";
+import Style from "./Main.module.scss";
+import Navbar from "./Nav";
+import Home from "./home/Home";
+import About from "./aboutMe/AboutMe";
+import Portfolio from "./portfolio/Projects";
+import { Route, Routes } from "react-router-dom";
+import { Box, Grid } from "@mui/material";
 
 export default function Main() {
-  // lets export the Main section
-
-  // lets create a state for darkmode set it to false
   let [darkMode, setDarkMode] = useState(false);
 
-  // function to handle a click of the darkmode toggler
   function handleClick() {
     setDarkMode(!darkMode);
   }
 
   return (
-    // create parent container w/ the state and its props in a className
     <Box className={darkMode ? Style.dark : Style.light}>
       <Grid
         container
@@ -33,13 +24,13 @@ export default function Main() {
         justifyContent={"space-between"}
       >
         <Grid item>
-          <Nav darkMode={darkMode} handleClick={handleClick} />
+          <Navbar darkMode={darkMode} handleClick={handleClick} />
         </Grid>
         <Grid item flexGrow={1}>
           <Routes>
             <Route exact path={"/"} element={<Home />} />
-            <Route exact path={"/about"} element={<AboutMe />} />
-            {/* <Route exact path={"/portfolio"} element={<Portfolio />} /> */}
+            <Route exact path={"/about"} element={<About />} />
+            <Route exact path={"/portfolio"} element={<Portfolio />} />
           </Routes>
         </Grid>
         <Grid item>
@@ -53,8 +44,8 @@ export default function Main() {
             width={"100%"}
           >
             <p>
-              PortfolioV2 inspired by many, imagined && created by{" "}
-              <a href={"#"}>Michael Gonzalez</a>
+              Portfolio2.0 imagined && created by
+              <a href={"http://mikegonz0.dev"}>Michael Gonzalez</a>
             </p>
             <p>&copy; 2022</p>
           </Box>

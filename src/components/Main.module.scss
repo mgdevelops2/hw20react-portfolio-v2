@@ -1,46 +1,32 @@
 @import "../variables.modules";
 
+footer {
+  color: $dark;
+}
 
 .dark {
- background-color: $dark;
- color: $white;
- transition: all 400ms;
- a, i {
-   color: $white;
-   transition: color 400ms;
- }
- a:visited {
-   color: $white;
- }
- i:hover {
-   color: $purple;
- }
- footer {
-   color: $white;
- }
+  background-color: $dark;
+  color: $white;
+  transition: all 400ms;
 
- nav {
-   background-color: $dark;
-   transition: $transition;
- }
+  a,
+  i,
+  li {
+    color: $white;
+    transition: color 400ms;
+  }
 
- div > section > div:first-child {
-   background-color: #575e64;
-   i:first-child {
-     color: $red;
-   }
-   i:nth-child(2) {
-     color: $yellow;
-   }
-   i:nth-child(3) {
-     color: $green;
-   }
- }
+  a:visited {
+    color: $white;
+  }
 
+  footer {
+    color: $white;
+  }
+}
 
- & > div div {
-   i {
-     color: white;
-   }
- }
+.light {
+  background-color: $lightgray;
+  color: $dark;
+  transition: all 400ms;
 }
