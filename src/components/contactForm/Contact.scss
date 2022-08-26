@@ -15,6 +15,7 @@
   .contact-description {
     font-size: 15px;
     color: #333;
+    margin-top: 15px;
     margin-bottom: 15px;
     text-align: center;
   }
@@ -102,13 +103,12 @@
   background-color: var(--white);
   border-top: 4px solid var(--primary);
   border-bottom: 4px solid var(--primary);
-  height: 500px;
 }
 
 form {
   .form-row {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     .form-group {
       input {
         width: 280px;

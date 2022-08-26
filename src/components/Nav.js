@@ -13,8 +13,8 @@ const links = [
   },
   {
     name: "aboutMe",
-    to: "/about",
-    active: "about",
+    to: "/aboutMe",
+    active: "aboutMe",
   },
   {
     name: details.initials,
@@ -22,15 +22,21 @@ const links = [
     to: "/",
     active: "home",
   },
+  // use this if you want to display your resume in the browser
+  // {
+  //   name: "resume/CV",
+  //   to: "/resume",
+  //   active: "resume",
+  // },
   {
     name: "portfolio",
     to: "/portfolio",
     active: "portfolio",
   },
   {
-    name: "Resume/CV",
-    to: "/resume",
-    active: "resume",
+    name: "contactMe",
+    to: "/contactForm",
+    active: "contactMe",
   },
 ];
 
@@ -67,6 +73,13 @@ export default function Navbar({ darkMode, handleClick }) {
             </Link>
           </Box>
         ))}
+        <li>
+          <li>
+            <a
+              href="https://drive.google.com/file/d/1b3DGy8T0wnLxi38ifFvr2eTXnz3ZkqhZ/view?usp=sharing" target="_blank" rel="norefferer" > resume/CV
+            </a>
+          </li>
+        </li>
         <li>
           <Toggler darkMode={darkMode} handleClick={handleClick} />
         </li>

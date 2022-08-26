@@ -31,7 +31,7 @@ export default function Home() {
             >
               {details.firstName}
             </span>
-            <span className={Style.hand}>🤚</span>
+            <span className={Style.hand}>🖖🏼</span>
           </h1>
           <h2>I'm {details.position}.</h2>
           <Box component={"ul"} p={"0.8rem"}>
@@ -61,9 +61,7 @@ export default function Home() {
         gap={"1.5rem"}
         justifyContent={"center"}
         fontSize={{ xs: "2rem", md: "2.5rem" }}
-      >
-        <ContactForm />
-      </Box>
+      ></Box>
     </>
   );
 }

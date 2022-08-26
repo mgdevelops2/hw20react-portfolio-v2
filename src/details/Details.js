@@ -1,78 +1,64 @@
-import self from "../images/self.png";
-import mock1 from "../images/mock1.png";
-import mock2 from "../images/mock2.png";
+// this will be a section that will allow us to keep our details for our template in one place and export them to different components as needed
+import self from "../images/self.png"; // lets import our first image of a our logo/avatar
+import mock1 from "../images/mock1.png"; // importing first project image
+import mock2 from "../images/mock2.png"; // importing second project image
 
-/* Hi there! Thanks for checking out my portfolio template. Be sure to read the comments to get a better understanding of
-how to make this template work best for you! */
-
-export let colors = ["rgb(0,255,164)", "rgb(166,104,255)"];
-/*
-I highly recommend using a gradient generator like https://gradientgenerator.paytonpierce.dev/ to generate a pair of colors that you like.
-These colors will be used to style your name on the homepage, the background of your picture, and some other accents throughout
-the site.
- */
-
-/*
-So let's get started! Some of the info below is pretty self-explanatory, like 'firstName' and 'bio'. I'll try to explain anything
-that might not be obvious right off the bat :) I recommend looking at the template example live using "npm start" to get an idea
-of what each of the values mean.
- */
+// this is all fairly self explaining, but follow along w/ the comments add/edit/remove anything you deem necessary or unnecessary.
+// it is recommended to run this live while you make edits so you can see the direction you are heading in.
 
 export const details = {
+  // exporting our details
   firstName: "Michael",
   lastName: "Gonzalez",
   initials: "MG",
   position: "a Full-Stack Developer",
   selfPortrait: self, // don't change this unless you want to name your self-portrait in the "img" folder something else!
-  gradient: `-webkit-linear-gradient(135deg, ${colors})`, // don't change this either
-  baseColor: colors[0],
   miniBio: [
-    // these are just some "tidbits" about yourself.
+    // this section is a mini bio
     {
-      emoji: "☕",
-      text: "fueled by coffee",
+      emoji: "💼",
+      text: "A full stack developer is an engineer or developer who works on both the front end (client-side) and the back end (server-side) of a website or application.",
     },
     {
       emoji: "🌎",
-      text: "based in the US",
-    },
-    {
-      emoji: "💼",
-      text: "Systems Engineer at Google",
-    },
-    {
-      emoji: "📧",
-      text: "mikegonz0.dev@gmail.com",
+      text: "based somewhere in the US.",
     },
   ],
   socials: [
+    // this is your social media links
     {
-      link: "https://instagram.com",
-      icon: "fa fa-instagram",
-      label: "instagram",
+      link: "mailto:mikegonzo.dev@gmail.com",
+      icon: "fa fa-at",
+      label: "email",
     },
     {
-      link: "https://github.com",
+      link: "https://github.com/mike-gonz0",
       icon: "fa fa-github",
       label: "github",
     },
     {
-      link: "https://linkedin.com",
+      link: "https://www.linkedin.com/in/mike-gonz0/",
       icon: "fa fa-linkedin",
       label: "linkedin",
     },
     {
-      link: "https://twitter.com",
+      link: "https://twitter.com/mikegonz0dev",
       icon: "fa fa-twitter",
       label: "twitter",
     },
     // Feel free to remove any of these that you don't have. I'll write an FAQ on how to add new ones later, let me know if you have a request for an icon!
     // Just change the links so that they lead to your social profiles.
   ],
-  bio: "Hey! I'm Mike, I am a former Business Analyst, who caught the programming bug when I was learning SQL. ",
+  bio: "Hey! Welcome to my page, I am Mike a former Business Analyst turned Software Engineer, and over the years I've acquired a particular set of skills that are a nightmare for complex datasets and bugs! They allow me to compose and deliver reliable scalable software solutions. I mainly work with JavaScript-based frameworks and libraries in the MERN stack, and I am always up for learning something new. ",
   skills: {
     proficientWith: [
+      "html5",
+      "css3",
       "javascript",
+      "JQuery",
+      "Express",
+      "webpack",
+      "Heroku",
       "react",
       "git",
       "github",
@@ -82,25 +68,28 @@ export const details = {
       "nodejs",
       "mySQL",
       "MongoDB/Mongoose",
+      "command-line",
+      "linux",
     ],
-    exposedTo: ["figma", "python"],
+    exposedTo: ["figma", "python", "AdobeExpress"],
   },
   hobbies: [
     {
-      label: "reading",
-      emoji: "📖",
+      label: "tacoTasting",
+      emoji: "🌮",
     },
     {
-      label: "theater",
-      emoji: "🎭",
+      label: "auto - NB2 Mazda Miata",
+      emoji: "🏎",
     },
     {
       label: "movies",
       emoji: "🎥",
     },
+
     {
-      label: "cooking",
-      emoji: "🌶",
+      label: "reading",
+      emoji: "📖",
     },
     // Same as above, change the emojis to match / relate to your hobbies or interests.
     // You can also remove the emojis if you'd like, I just think they look cute :P
@@ -120,9 +109,4 @@ export const details = {
       image: mock2,
     },
   ],
-};
-
-export const contact = {
-  // email is optional - if left empty Contact section won't show up
-  email: "hcc780921@gmail.com",
 };

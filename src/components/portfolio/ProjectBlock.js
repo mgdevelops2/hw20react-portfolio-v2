@@ -26,7 +26,7 @@ function PortfolioBlock(props) {
           <Icon link={live} title={"Live Demo"} icon={"fa fa-safari"} />
         </Box>
         <Box p={1} border={"2px solid black"} borderRadius={"25px"}>
-          <Icon link={source} title={"Source Code"} icon={"fa fa-code"} />
+          <Icon link={source} title={"GitHub"} icon={"fa fa-code"} />
         </Box>
       </Box>
     </Box>

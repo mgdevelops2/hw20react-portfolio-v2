@@ -2,38 +2,17 @@ import React from "react";
 
 import "./Contact.scss";
 
-export default function App() {
+export default function ContactForm() {
   return (
     <div className="contact-container">
-      <div className="contact-title">Contact</div>
+      <div className="contact-title">contact Me</div>
       <div className="contact-description">
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque ullam
-        quasi eos ea inventore. Sit!
+        I don't know who you are, but if you are building something cool and
+        look to deliver results, reach out! I like to impact the bottom line,
+        play nice and help others along the way.
       </div>
       <div className="contact-block">
-        <div className="block-1">
-          <div className="address">
-            <i className="fas fa-map-marker-alt"></i>
-            <div className="address-details">
-              <p>Location</p>
-              <p>B22 Bakers Street, Glasgow, Scotland</p>
-            </div>
-          </div>
-          <div className="email">
-            <i className="fas fa-envelope"></i>
-            <div className="email-details">
-              <p>Email</p>
-              <p>info@example.com</p>
-            </div>
-          </div>
-          <div className="phone">
-            <i className="fas fa-phone-alt"></i>
-            <div className="phone-details">
-              <p>Call</p>
-              <p>+1 2222 2222 22</p>
-            </div>
-          </div>
-
+        {/* <div className="block-1">
           <div className="map">
             <iframe
               title="iframe"
@@ -44,10 +23,10 @@ export default function App() {
               src="https://maps.google.co.uk/maps?f=q&amp;source=s_q&amp;hl=en&amp;geocode=&amp;q=glasgow&amp;aq=&amp;sll=55.988706,-4.578927&amp;sspn=0.038696,0.132093&amp;ie=UTF8&amp;hq=&amp;hnear=Glasgow,+Glasgow+City,+United+Kingdom&amp;t=m&amp;ll=55.864331,-4.251709&amp;spn=0.048164,0.135612&amp;z=12&amp;iwloc=A&amp;output=embed"
             ></iframe>
           </div>
-        </div>
+        </div> */}
         <div className="block-2">
           <form action="#">
-            <div className="form-row">
+            <div className="form-col">
               <div className="form-group">
                 <label htmlFor="name">Your Name</label>
                 <input type="text" id="name" />
@@ -67,7 +46,9 @@ export default function App() {
               <textarea name="message" id="message"></textarea>
             </div>
             <div className="btn-container">
-              <button type="submit">Send Message</button>
+              <a href="mailto:abc@example.com?subject = Feedback&body = Message">
+                Send Feedback
+              </a>
             </div>
           </form>
         </div>
