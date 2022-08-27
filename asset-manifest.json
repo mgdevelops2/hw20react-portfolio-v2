@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/hw20react-portfolio-v2/static/css/main.8e6c938a.css",
-    "main.js": "/hw20react-portfolio-v2/static/js/main.a5b81eb5.js",
+    "main.css": "/hw20react-portfolio-v2/static/css/main.b86c2573.css",
+    "main.js": "/hw20react-portfolio-v2/static/js/main.a6ef732d.js",
     "static/media/self.png": "/hw20react-portfolio-v2/static/media/self.f6c7ae796cc1d799e198.png",
     "static/media/JATE.png": "/hw20react-portfolio-v2/static/media/JATE.41881dead2fedf67f4fd.png",
     "static/media/DayTrading.png": "/hw20react-portfolio-v2/static/media/DayTrading.83afc355f5e2b8314786.png",
@@ -10,11 +10,11 @@
     "static/media/RPS.png": "/hw20react-portfolio-v2/static/media/RPS.711e7e9a23c5818d09c7.png",
     "static/media/NoteTaking.png": "/hw20react-portfolio-v2/static/media/NoteTaking.d5999299c7311a23a859.png",
     "index.html": "/hw20react-portfolio-v2/index.html",
-    "main.8e6c938a.css.map": "/hw20react-portfolio-v2/static/css/main.8e6c938a.css.map",
-    "main.a5b81eb5.js.map": "/hw20react-portfolio-v2/static/js/main.a5b81eb5.js.map"
+    "main.b86c2573.css.map": "/hw20react-portfolio-v2/static/css/main.b86c2573.css.map",
+    "main.a6ef732d.js.map": "/hw20react-portfolio-v2/static/js/main.a6ef732d.js.map"
   },
   "entrypoints": [
-    "static/css/main.8e6c938a.css",
-    "static/js/main.a5b81eb5.js"
+    "static/css/main.b86c2573.css",
+    "static/js/main.a6ef732d.js"
   ]
 }
