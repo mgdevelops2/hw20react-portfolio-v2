@@ -1,6 +1,6 @@
 # hw20 - React Portfolio
 
-![Screen Shot 2022-08-26 at 9 00 57 PM](https://user-images.githubusercontent.com/98365942/187008117-31afab84-8c38-484f-9cbf-d195d47fe67e.png)
+![Screen Shot 2022-08-26 at 9 01 39 PM](https://user-images.githubusercontent.com/98365942/187008146-7011c8c7-5a0f-41f4-bcc9-d6f05ede13bb.png)
 
 ## Description
 
