@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/hw20react-portfolio-v2/static/css/main.b86c2573.css",
+    "main.css": "/hw20react-portfolio-v2/static/css/main.764c5f23.css",
     "main.js": "/hw20react-portfolio-v2/static/js/main.a6ef732d.js",
     "static/media/self.png": "/hw20react-portfolio-v2/static/media/self.f6c7ae796cc1d799e198.png",
     "static/media/JATE.png": "/hw20react-portfolio-v2/static/media/JATE.41881dead2fedf67f4fd.png",
@@ -10,11 +10,11 @@
     "static/media/RPS.png": "/hw20react-portfolio-v2/static/media/RPS.711e7e9a23c5818d09c7.png",
     "static/media/NoteTaking.png": "/hw20react-portfolio-v2/static/media/NoteTaking.d5999299c7311a23a859.png",
     "index.html": "/hw20react-portfolio-v2/index.html",
-    "main.b86c2573.css.map": "/hw20react-portfolio-v2/static/css/main.b86c2573.css.map",
+    "main.764c5f23.css.map": "/hw20react-portfolio-v2/static/css/main.764c5f23.css.map",
     "main.a6ef732d.js.map": "/hw20react-portfolio-v2/static/js/main.a6ef732d.js.map"
   },
   "entrypoints": [
-    "static/css/main.b86c2573.css",
+    "static/css/main.764c5f23.css",
     "static/js/main.a6ef732d.js"
   ]
 }
