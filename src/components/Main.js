@@ -47,7 +47,7 @@ export default function Main() {
             width={"100%"}
           >
             <p>
-              Portfolio2.0 imagined && created by
+              Portfolio.v2 imagined && created by
               <a href={"http://mikegonz0.dev"}>Michael Gonzalez</a>
             </p>
             <p>&copy; 2022</p>

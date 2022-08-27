@@ -1,7 +1,11 @@
 // this will be a section that will allow us to keep our details for our template in one place and export them to different components as needed
 import self from "../images/self.png"; // lets import our first image of a our logo/avatar
-import mock1 from "../images/mock1.png"; // importing first project image
-import mock2 from "../images/mock2.png"; // importing second project image
+import proj1 from "../images/DayTrading.png"; // importing 1st project image
+import proj2 from "../images/JATE.png"; // importing 2nd project image
+import proj3 from "../images/NoteTaking.png"; // importing 3rd project image
+import proj4 from "../images/CommandLineApp.png"; // importing 4th project image
+import proj5 from "../images/RPS.png"; // importing 5th project image
+import proj6 from "../images/Placeholder.png"; // importing 6th project image
 
 // this is all fairly self explaining, but follow along w/ the comments add/edit/remove anything you deem necessary or unnecessary.
 // it is recommended to run this live while you make edits so you can see the direction you are heading in.
@@ -97,16 +101,40 @@ export const details = {
   portfolio: [
     // This is where your portfolio projects will be detailed
     {
-      title: "Project 1",
-      live: "https://paytonpierce.dev", //this should be a link to the live version of your project, think github pages, netlify, heroku, etc. Or your own domain, if you have it.
-      source: "https://github.com/paytonjewell", // this should be a link to the **repository** of the project, where the code is hosted.
-      image: mock1,
+      title: "PlaceHolder",
+      live: "https://github.com/VictoriaDunlap/Project3", //this should be a link to your deployed app.
+      source: "https://github.com/VictoriaDunlap/Project3", // this is a link to your repo
+      image: proj6,
     },
     {
-      title: "Project 2",
-      live: "https://paytonpierce.dev",
-      source: "https://github.com/paytonjewell",
-      image: mock2,
+      title: "DayTrading - Indicator",
+      live: "https://www.tradingview.com/script/T3geQXsw-gonzo-ultimate-vwap-ema/", //this should be a link to your deployed app.
+      source: "https://github.com/mike-gonz0/mikegonz0-Ult-Indicator", // this is a link to your repo
+      image: proj1,
+    },
+    {
+      title: "A Text Editor",
+      live: "https://mg-texteditor.herokuapp.com/",
+      source: "https://github.com/mike-gonz0/hW19-pwaTextEditor",
+      image: proj2,
+    },
+    {
+      title: "Note Taking App",
+      live: "https://mighty-stream-00730.herokuapp.com/",
+      source: "https://github.com/mike-gonz0/noteTaking-App",
+      image: proj3,
+    },
+    {
+      title: "Command-Line README generator",
+      live: "https://github.com/mike-gonz0/README-generator",
+      source: "https://github.com/mike-gonz0/README-generator",
+      image: proj4,
+    },
+    {
+      title: "Rock,Paper, + Scissor",
+      live: "https://mike-gonz0.github.io/rockPaperScissors/",
+      source: "https://github.com/mike-gonz0/rockPaperScissors",
+      image: proj5,
     },
   ],
 };
