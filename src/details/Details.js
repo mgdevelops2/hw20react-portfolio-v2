@@ -50,7 +50,7 @@ export const details = {
       icon: "fa fa-twitter",
       label: "twitter",
     },
-    // Feel free to remove any of these that you don't have. I'll write an FAQ on how to add new ones later, let me know if you have a request for an icon!
+    // simple here just plug and play - replace my info w/ your info
     // Just change the links so that they lead to your social profiles.
   ],
   bio: "Hey! Welcome to my page, I am Mike a former Business Analyst turned Software Engineer, and over the years I've acquired a particular set of skills that are a nightmare for complex datasets and bugs! They allow me to compose and deliver reliable scalable software solutions. I mainly work with JavaScript-based frameworks and libraries in the MERN stack, and I am always up for learning something new. ",
