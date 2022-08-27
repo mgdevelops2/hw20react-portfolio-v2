@@ -1,8 +1,8 @@
 {
   "name": "portfolio2.0",
   "version": "2.0.0",
-  "homepage": "https://github.com/mike-gonz0/hw20react-portfolio-v2",
-  "private": false,
+  "homepage": "https://mike-gonz0.github.io",
+  "private": true,
   "dependencies": {
     "@emotion/react": "^11.9.0",
     "@emotion/styled": "^11.8.1",
@@ -29,7 +29,7 @@
   },
   "scripts": {
     "predeploy": "npm run build",
-    "deploy": "gh-pages -d build",
+    "deploy": "gh-pages -b master -d build",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
