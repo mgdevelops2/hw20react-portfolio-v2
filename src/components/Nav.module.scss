@@ -14,7 +14,7 @@ li {
   transition: $transition;
 
   &:hover {
-    transform: translateY(-5px);
+    transform: translateX(5px);
     transition: $transition;
   }
 }

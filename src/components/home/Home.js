@@ -23,7 +23,7 @@ export default function Home() {
         <img class="App-logo" alt="logo" src={me}></img>
         <Box>
           <h1>
-            Hey, my name is{" "}
+            Hey, my name's{" "}
             <span
               style={{
                 WebkitBackgroundClip: "text",
@@ -33,7 +33,7 @@ export default function Home() {
             </span>
             <span className={Style.hand}>🖖🏼</span>
           </h1>
-          <h2>I'm {details.position}.</h2>
+          <h2>And I am {details.position}.</h2>
           <Box component={"ul"} p={"0.8rem"}>
             {details.miniBio.map((bio, index) => (
               <BulletPt key={index} emoji={bio.emoji} text={bio.text} />

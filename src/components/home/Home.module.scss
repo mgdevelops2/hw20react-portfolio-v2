@@ -1,4 +1,4 @@
-@import "../../variables.modules.scss";
+@import "../../variables.modules";
 
 h1 {
   font-size: 2rem;
@@ -32,7 +32,7 @@ a {
 }
 
 a:hover {
-  color: $white;
+  color: $lightgray;
   transition: color 200ms ease;
 }
 

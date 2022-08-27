@@ -7,34 +7,24 @@ import { details } from "../details/Details";
 
 const links = [
   {
-    name: "home",
-    to: "/hw20react-portfolio-v2/",
-    active: "home",
-  },
-  {
-    name: "aboutMe",
-    to: "/hw20react-portfolio-v2/aboutMe",
-    active: "aboutMe",
-  },
-  {
     name: details.initials,
     type: "initials",
     to: "/hw20react-portfolio-v2/",
     active: "home",
   },
-  // use this if you want to display your resume in the browser
-  // {
-  //   name: "resume/CV",
-  //   to: "/resume",
-  //   active: "resume",
-  // },
+  {
+    name: "about",
+    to: "/hw20react-portfolio-v2/aboutMe",
+    active: "aboutMe",
+  },
+
   {
     name: "portfolio",
     to: "/hw20react-portfolio-v2/portfolio",
     active: "portfolio",
   },
   {
-    name: "contactMe",
+    name: "contact",
     to: "/hw20react-portfolio-v2/contactForm",
     active: "contactMe",
   },
@@ -74,18 +64,13 @@ export default function Navbar({ darkMode, handleClick }) {
           </Box>
         ))}
         <li>
-          <li>
-            <a
-              href="https://drive.google.com/file/d/1C7Xux-yypJCIU5KcisPC2K_0dsFTA8_m/view?usp=sharing"
-              target="_blank"
-              rel="norefferer"
-            >
-              {" "}
-              resume/CV
-            </a>
-          </li>
-        </li>
-        <li>
+          <a
+            href="https://drive.google.com/file/d/1C7Xux-yypJCIU5KcisPC2K_0dsFTA8_m/view?usp=sharing"
+            target="_blank"
+            rel="norefferer"
+          >
+            resume
+          </a>
           <Toggler darkMode={darkMode} handleClick={handleClick} />
         </li>
       </Box>
