@@ -1,5 +1,7 @@
 # hw20 - React Portfolio
 
+![Screen Shot 2022-08-26 at 9 00 26 PM](https://user-images.githubusercontent.com/98365942/187008100-e9d96c01-6500-480c-923f-16c8c45427e4.png)
+
 ## Description
 
 This is a portfolio template - inspired by many, but created for me by me. The hope is that this helps someone in the future.
