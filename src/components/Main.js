@@ -29,7 +29,7 @@ export default function Main() {
         </Grid>
         <Grid item flexGrow={1}>
           <Routes>
-            <Route exact path={"/hw20react-portfolio-v2"} element={<Home />} />
+            <Route exact path={"/hw20react-portfolio-v2/"} element={<Home />} />
             <Route
               exact
               path={"/hw20react-portfolio-v2/aboutMe"}

@@ -8,18 +8,18 @@ import { details } from "../details/Details";
 const links = [
   {
     name: "home",
-    to: "/",
+    to: "/hw20react-portfolio-v2/",
     active: "home",
   },
   {
     name: "aboutMe",
-    to: "/aboutMe",
+    to: "/hw20react-portfolio-v2/aboutMe",
     active: "aboutMe",
   },
   {
     name: details.initials,
     type: "initials",
-    to: "/",
+    to: "/hw20react-portfolio-v2/",
     active: "home",
   },
   // use this if you want to display your resume in the browser
@@ -30,12 +30,12 @@ const links = [
   // },
   {
     name: "portfolio",
-    to: "/portfolio",
+    to: "/hw20react-portfolio-v2/portfolio",
     active: "portfolio",
   },
   {
     name: "contactMe",
-    to: "/contactForm",
+    to: "/hw20react-portfolio-v2/contactForm",
     active: "contactMe",
   },
 ];
