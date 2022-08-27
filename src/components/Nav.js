@@ -76,7 +76,12 @@ export default function Navbar({ darkMode, handleClick }) {
         <li>
           <li>
             <a
-              href="https://drive.google.com/file/d/1b3DGy8T0wnLxi38ifFvr2eTXnz3ZkqhZ/view?usp=sharing" target="_blank" rel="norefferer" > resume/CV
+              href="https://drive.google.com/file/d/1C7Xux-yypJCIU5KcisPC2K_0dsFTA8_m/view?usp=sharing"
+              target="_blank"
+              rel="norefferer"
+            >
+              {" "}
+              resume/CV
             </a>
           </li>
         </li>
