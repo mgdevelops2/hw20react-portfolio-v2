@@ -83,7 +83,7 @@ export const details = {
       emoji: "🌮",
     },
     {
-      label: "auto - NB2 Mazda Miata",
+      label: "drive - NB2 Mazda Miata",
       emoji: "🏎",
     },
     {
